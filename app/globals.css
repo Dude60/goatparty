@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+:root {
+  --background: #121314;
+  --foreground: #f4f4f5;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(0.7);
+    opacity: 0;
+  }
+  15% {
+    transform: translateY(-30px) scale(1.25);
+    opacity: 1;
+  }
+  75% {
+    transform: translateY(-180px) scale(1.1);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(-280px) scale(0.8);
+    opacity: 0;
+  }
+}
+
+.animate-float-fade {
+  animation: floatUp 2.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+/* Custom PrimeVision scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #121314;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a2b2e;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3f4044;
+}
