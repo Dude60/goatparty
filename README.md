@@ -1,7 +1,7 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+1- Online (saving you the troubles) = https://goatparty.vercel.app/ 
 
-## Getting Started
-
+2- Use it locally: 
 First, run the development server:
 
 ```bash
